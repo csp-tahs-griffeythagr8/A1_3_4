@@ -15,11 +15,12 @@ If necessary, check Part II from A 1.3.4 in the book to see how we use the input
 
 Enter the following code after your newly created variable to sanitize your data: 
 
-'''python
-sani_input = int(usr_input)
-
-if sani_input != type(int):
+```python3
+try:
+  sani_input = int(usr_input)
+  print("Is an integer")
+except(TypeError, ValueError):
   print("Not an integer")
-else:
-  continue
-'''
+```
+
+
