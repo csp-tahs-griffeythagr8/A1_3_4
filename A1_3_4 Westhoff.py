@@ -24,3 +24,10 @@ try:
   print("Is an integer")
 except(TypeError, ValueError):
   print("Not an integer")
+
+"""
+Code:
+1. usr_input can either replace guess or you can use input instead of the programmer assigned value. 
+2. Sanitizing your code should come directly after your guess variable. 
+3. Whether using usr_input or guess you need to pull in user data to put into your function. Otherwise the game doesn't work as intended. 
+"""
